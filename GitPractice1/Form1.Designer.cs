@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            button1 = new Button();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -41,11 +46,56 @@
             label1.TabIndex = 0;
             label1.Text = "Currency converter";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(12, 128);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(142, 23);
+            textBox1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(212, 128);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(147, 23);
+            textBox2.TabIndex = 2;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(129, 171);
+            button1.Name = "button1";
+            button1.Size = new Size(110, 59);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(12, 80);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(142, 23);
+            comboBox1.TabIndex = 4;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(212, 80);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(147, 23);
+            comboBox2.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(371, 534);
+            ClientSize = new Size(371, 242);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(button1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -57,5 +107,10 @@
         #endregion
 
         private Label label1;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Button button1;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
     }
 }
