@@ -8,6 +8,7 @@ namespace GitPractice1
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
             foreach (var cur in (Currency[])Enum.GetValues(typeof(Currency)))
             {
                 comboBox1.Items.Add(cur);
