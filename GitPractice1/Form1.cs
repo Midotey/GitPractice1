@@ -8,7 +8,11 @@ namespace GitPractice1
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            foreach (var cur in (Currency[])Enum.GetValues(typeof(Currency)))
+            {
+                comboBox1.Items.Add(cur);
+                comboBox2.Items.Add(cur);
+            }
         }
 
         enum Currency
@@ -75,8 +79,9 @@ namespace GitPractice1
                     }
                 }
             };
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
+            textBox2.Text = (await GetValue()).ToString();
         }
         private async Task<decimal> GetValue()
         {
@@ -116,9 +121,9 @@ namespace GitPractice1
         ///TODO: first master commit!
         ///TODO: создать конвертер валют.
         /* 1. Разобраться как работают конвертеры. -d.
-         * 2. Сделать конвертер. -p.
-         * 3. Сделать соотношение валют, хранение значения одного к другому и т.д. т.п.
-         * 4. ...
+         * 2. Сделать конвертер. -d.
+         * 3. Сделать соотношение валют, хранение значения одного к другому и т.д. т.п. -d.
+         * 4. Комитить этапы разработки.
          */
         ///TODO: доделать проект этот, и приступить к след видео про гит и его практике.
 
