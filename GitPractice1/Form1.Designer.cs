@@ -42,9 +42,9 @@
             label1.Font = new Font("Segoe UI", 20F);
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(263, 37);
+            label1.Size = new Size(239, 37);
             label1.TabIndex = 0;
-            label1.Text = "Currency converter)))";
+            label1.Text = "Currency converter";
             // 
             // textBox1
             // 
