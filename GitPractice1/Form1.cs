@@ -35,7 +35,7 @@ namespace GitPractice1
                         },
                         {
                             Currency.Dollar,
-                            1.011m
+                            0.011m
                         },
                         {
                             Currency.Euro,
