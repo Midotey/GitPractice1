@@ -130,8 +130,7 @@ namespace GitPractice1
         
 
 
-
-        ///TODO: merge with conflict -need repair
+        ///ALL IS COOL! LIKE AND SUBCRIBE PLSSSSS!!!
         ///TODO: git branch edit!
 
 
