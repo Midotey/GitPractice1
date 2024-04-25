@@ -131,6 +131,8 @@ namespace GitPractice1
 
 
 
+        ///TODO: merge with conflict -need repair
+        ///TODO: git branch edit!
 
 
     }
